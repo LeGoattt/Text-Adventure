@@ -1,0 +1,279 @@
+using System;
+using System.Diagnostics;
+using System.Reflection.Metadata;
+using System.Threading;
+
+namespace TextAdventure
+{
+    internal struct GeneralInfo
+    {
+        
+    }
+   
+    internal struct Parasite
+    {
+        public int parasiteControl;
+        public string parasiteName;
+    }
+    internal class Programs
+    {
+        static void lblal(string text, int delay = 15)
+        {
+            lblal(text, delay);
+            Console.WriteLine();
+        }
+        static void lbl(string text, int delay = 15)
+        {
+            for (int i = 0; i < text.Length; i++)
+            {
+                Console.Write(text[i]);
+                Thread.Sleep(delay);
+            }
+        }
+        static string PromptPlayer()
+        {
+
+            string input;
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write("> ");
+            input = Console.ReadLine();
+            Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.Gray;
+            return input;
+        }
+        static void Main(string[] args)
+        {
+            StartMenu();
+            Intro();
+            Choices();
+            callOut();
+            callOutAgain();
+            callOutYetAgain();
+            CALLOUT();
+            Struggle();
+            struggleMore();
+            struggleSomeMore();
+            continueSearching();
+            attemptToStand();
+            FIREBALL();
+            restAbit();
+            stayPut();
+            keepStaying();
+            stayABitLonger();
+            STAYPUT();
+        }
+        static void StartMenu()
+        {
+            lblal("oh hey, you wanna play this depressive game? Cool just type Start");
+            lblal("EndingsWIP | Start", 0);
+            string choice = PromptPlayer();
+
+            if (string.Compare(choice, "Start", true) == 0)
+            {
+                Intro();
+            }
+            else if (string.Compare(choice, "Endings", true) == 0)
+            {
+                Struggle();
+            }
+            else
+            {
+                lblal("are you? do you want to play orr did you mistype start. Here I'll just do it anyway");
+                Intro();
+            }
+        }
+        static void Intro()
+        {
+            lblal("...");
+            Thread.Sleep(1000);
+            lblal("...");
+            Thread.Sleep(1000);
+            lblal(". . . plop, plop, plop.");
+            Thread.Sleep(1000);
+            lblal("That's all you can hear, that's all you've been able to hear. For what feels as though an eternity.");
+            Thread.Sleep(500);
+            lblal("Shackled to a cold and wet wall, deep inside a damp cave- the lack of light engulfing you in darkness, the cold biting at your skin.");
+            Thread.Sleep(500);
+            lblal("All the while- That steady patter of droplets fall from above your head, right infront of you. This water being the only reason you've even survived this long.");
+            Thread.Sleep(1500);
+
+            Console.WriteLine();
+        }
+        static void Choices()
+        {
+            lblal("All this crushing dread, you need to do something about it. But what?");
+            lblal("Call Out | Struggle | Stay Put", 0);
+            string choice = PromptPlayer();
+
+            if (string.Compare(choice, "Call Out", true) == 0)
+            {
+                callOut();
+            }
+            else if (string.Compare(choice, "Struggle", true) == 0)
+            {
+                Struggle();
+            }
+            else if (string.Compare(choice, "Stay Put", true) == 0)
+            {
+                stayPut();
+            }
+            else
+            {
+                lblal("No, no that wouldn't work. Try something else");
+                Choices();
+            }
+        }
+        static void callOut()
+        {
+            lblal("You attempt to muster up the strength to make a noise. Anything- But the most that comes out is a pathetic hearse wheeze. Too weak, too starved to even scream.");
+            lblal("Call Out Again | Struggle | Stay Put", 0);
+            string choice = PromptPlayer();
+
+            if (string.Compare(choice, "Call Out Again", true) == 0)
+            {
+                callOutAgain();
+            }
+            else if (string.Compare(choice, "Struggle", true) == 0)
+            {
+                Struggle();
+            }
+            else if (string.Compare(choice, "Stay Put", true) == 0)
+            {
+                stayPut();
+            }
+            else
+            {
+                lblal("That wasn't an option. Use your eyes Player");
+                callOut();
+            }
+
+
+        }
+        static void callOutAgain()
+        {
+            lblal("Despite this setback, a burst of determination pushes you forth. To get atleast a Sound out. Just one small sound that's all");
+            Thread.Sleep(500);
+            lblal("Gathering up all your strength, taking in the deepest breath you can muster- Gaining all your resolve only- To fail. Once again... Nothing changes");
+            Thread.Sleep(500);
+            lblal("You cant do a single thing. You cant scream I already told you that. What are you stupid? Dont try again, pick another option.");
+            Thread.Sleep(250);
+            lblal("Call Out yet Again | Struggle | Stay Put");
+            string choice = PromptPlayer();
+            if (string.Compare(choice, "Call Out yet Again", true) == 0)
+            {
+                callOutYetAgain();
+            }
+            else if (string.Compare(choice, "Struggle", true) == 0)
+            {
+                Struggle();
+            }
+            else if (string.Compare(choice, "Stay Put", true) == 0)
+            {
+                stayPut();
+            }
+            else
+            {
+                lblal("You know, maybe all that screaming made you light headed. Read the options a bit better mkay? mkay");
+                callOutAgain();
+
+            }
+        }
+        static void callOutYetAgain()
+        {
+            lblal("Really? Still trying are we? A shame. But fine I'll allow it");
+            Thread.Sleep(1000);
+            lblal("You take a moment to think leaning forward you pool a decent cup of water into your mouth, drinking up whatever you can- trying to satisfy your aching, dry throat.");
+            Thread.Sleep(500);
+            lblal("With this newfound moisture in your system. You manage to make a noise.. Congrats.");
+            Thread.Sleep(500);
+            lblal("You screamt the most pathetic scream that has ever been made. A raspy, almost whistle like noise that tears from your lips shamefully.");
+            Thread.Sleep(1500);
+            lblal("What? Did you expect something to happen? Who would hear you down here? No one.");
+            Thread.Sleep(500);
+            lblal("GOOD JOB- You got ending #2. \"Wasting your time like an idiot\". Congrats.");
+            lblal("Retry");
+            string choice = PromptPlayer();
+            if (string.Compare(choice, "Retry", true) == 0)
+            {
+                StartMenu();
+            }
+            else if (string.Compare(choice, "CALL OUT", true) == 0)
+            {
+                CALLOUT();
+            }
+            else
+            {
+                lblal("Okay I guess you didn't realize that me prompting \"Retry\" was your directions. Had I known you were stupid I would have just done it for you, just like I am now");
+                StartMenu();
+            }
+
+        }
+        static void CALLOUT()
+        {
+
+        }
+        
+        
+        
+        static void Struggle()
+        {
+
+        }
+        static void struggleMore()
+        {
+
+        }
+        static void struggleSomeMore()
+        {
+
+        }
+        static void attemptToStand()
+        {
+
+        }
+        static void continueSearching()
+        {
+
+        }
+        static void FIREBALL()
+        {
+
+        }
+        static void restAbit()
+        {
+
+        }
+
+
+
+        static void takeABitToRest()
+        {
+
+        }
+       
+        
+        
+        
+        
+        
+        
+        
+        static void stayPut()
+        {
+
+        }
+        static void keepStaying()
+        {
+
+        }
+        static void stayABitLonger()
+        {
+
+        }
+        static void STAYPUT()
+        {
+
+        }
+    }
+
+}
