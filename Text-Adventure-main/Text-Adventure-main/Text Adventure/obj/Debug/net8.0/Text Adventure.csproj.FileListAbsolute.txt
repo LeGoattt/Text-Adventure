@@ -1,0 +1,15 @@
+E:\VGD\1717483\Empty\Text-Adventure-main\Text-Adventure-main\Text Adventure\bin\Debug\net8.0\Text Adventure.exe
+E:\VGD\1717483\Empty\Text-Adventure-main\Text-Adventure-main\Text Adventure\bin\Debug\net8.0\Text Adventure.deps.json
+E:\VGD\1717483\Empty\Text-Adventure-main\Text-Adventure-main\Text Adventure\bin\Debug\net8.0\Text Adventure.runtimeconfig.json
+E:\VGD\1717483\Empty\Text-Adventure-main\Text-Adventure-main\Text Adventure\bin\Debug\net8.0\Text Adventure.dll
+E:\VGD\1717483\Empty\Text-Adventure-main\Text-Adventure-main\Text Adventure\bin\Debug\net8.0\Text Adventure.pdb
+E:\VGD\1717483\Empty\Text-Adventure-main\Text-Adventure-main\Text Adventure\obj\Debug\net8.0\Text Adventure.GeneratedMSBuildEditorConfig.editorconfig
+E:\VGD\1717483\Empty\Text-Adventure-main\Text-Adventure-main\Text Adventure\obj\Debug\net8.0\Text Adventure.AssemblyInfoInputs.cache
+E:\VGD\1717483\Empty\Text-Adventure-main\Text-Adventure-main\Text Adventure\obj\Debug\net8.0\Text Adventure.AssemblyInfo.cs
+E:\VGD\1717483\Empty\Text-Adventure-main\Text-Adventure-main\Text Adventure\obj\Debug\net8.0\Text Adventure.csproj.CoreCompileInputs.cache
+E:\VGD\1717483\Empty\Text-Adventure-main\Text-Adventure-main\Text Adventure\obj\Debug\net8.0\Text Adventure.sourcelink.json
+E:\VGD\1717483\Empty\Text-Adventure-main\Text-Adventure-main\Text Adventure\obj\Debug\net8.0\Text Adventure.dll
+E:\VGD\1717483\Empty\Text-Adventure-main\Text-Adventure-main\Text Adventure\obj\Debug\net8.0\refint\Text Adventure.dll
+E:\VGD\1717483\Empty\Text-Adventure-main\Text-Adventure-main\Text Adventure\obj\Debug\net8.0\Text Adventure.pdb
+E:\VGD\1717483\Empty\Text-Adventure-main\Text-Adventure-main\Text Adventure\obj\Debug\net8.0\Text Adventure.genruntimeconfig.cache
+E:\VGD\1717483\Empty\Text-Adventure-main\Text-Adventure-main\Text Adventure\obj\Debug\net8.0\ref\Text Adventure.dll

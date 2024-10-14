@@ -1,0 +1,5 @@
+You decide you should try and stand instead of laying there like a turd. So you do, you muster up all the remaining strength you can to slowly but surely wobble yourself up to your feet- Stumbling forward falling to your knees, the brittle joints cracking against the stone cave floor. But you dont stop- Determined to get to your feet you stand once more, feel around you for something, anything to hold onto. Eventually through your searches you stumble upon the wall of this pitch black cave leaning agsinst it in relief you take this moment to rest up
+
+|Continue Searching
+|Rest abit
+}Fireball
