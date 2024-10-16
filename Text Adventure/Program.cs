@@ -14,6 +14,7 @@ namespace TextAdventure
 
 
 
+
     internal class Programs
     {
         static void lblal(string text, int delay = 30) //Hey look. lblal means letter by letter line. WOW
@@ -66,6 +67,7 @@ namespace TextAdventure
             sleep4();
             helloDerek();
             bike();
+            Enums();
 
 
 
@@ -764,6 +766,14 @@ namespace TextAdventure
             {
                 bike();
             }
+            else if (string.Compare(choice, "Enum", true) == 0)
+            {
+                Enums();
+            }
+            else
+            {
+                helloDerek();
+            }
         }
         struct Bike
         {
@@ -785,6 +795,17 @@ namespace TextAdventure
 
             Console.WriteLine("How about the type of bike? ");
             bikes[0].Type = Console.ReadLine();
+
+            Console.WriteLine("Good choices " + bikes[0].Color + " is a good color, plus I like " + bikes[0].Type + " bikes too.");
+            string choice = PromptPlayer();
+            if(string.Compare(choice, "Go back", true) == 0)
+            {
+                helloDerek();
+            }
+            else
+            {
+                bike();
+            }
         }
         static void Ending()
         {
@@ -797,6 +818,25 @@ namespace TextAdventure
         struct Endings
         {
 
+        }
+        static void Enums()
+        {
+            string name = Word.helloDerek.ToString();
+            int points = (int)Word.helloDerek;
+
+            Console.WriteLine("oh " + name);
+            Console.WriteLine("You are worth " + points + "points");
+            Thread.Sleep(1000);
+            helloDerek();
+        }
+        enum Number
+        {
+            One = 1, Two = 2, Three = 3
+        }
+        enum Word
+        {
+            helloDerek = 10,
+            holaSenoir = 15,
         }
     }
 
