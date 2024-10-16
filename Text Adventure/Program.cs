@@ -2,6 +2,7 @@
 using System.Diagnostics;
 using System.Net.NetworkInformation;
 using System.Reflection.Metadata;
+using System.Reflection.PortableExecutable;
 using System.Text.Json;
 using System.Threading;
 
@@ -68,6 +69,7 @@ namespace TextAdventure
             helloDerek();
             bike();
             Enums();
+            Conversion();
 
 
 
@@ -770,6 +772,14 @@ namespace TextAdventure
             {
                 Enums();
             }
+            else if (string.Compare(choice, "convert", true) == 0)
+            {
+                Conversion();
+            }
+            else if (string.Compare(choice, "Go Back", true) == 0)
+            {
+                StartMenu();
+            }
             else
             {
                 helloDerek();
@@ -827,7 +837,15 @@ namespace TextAdventure
             Console.WriteLine("oh " + name);
             Console.WriteLine("You are worth " + points + "points");
             Thread.Sleep(1000);
-            helloDerek();
+            string choice = PromptPlayer();
+            if (string.Compare(choice, "Go Back", true) == 0)
+            {
+                helloDerek();
+            }
+            else
+            {
+                Enums();
+            }
         }
         enum Number
         {
@@ -837,6 +855,25 @@ namespace TextAdventure
         {
             helloDerek = 10,
             holaSenoir = 15,
+        }
+        static void Conversion()
+        {
+            Console.WriteLine("Enter a number");
+            int n = Convert.ToInt32(Console.ReadLine());
+            int a = 50;
+            int sum = n + a;
+
+            Console.WriteLine("very good. " + n + " plus 50 is " + sum);
+            string choice = PromptPlayer();
+            if (string.Compare(choice, "Go Back", true) == 0)
+            {
+                helloDerek();
+            }
+            else
+            {
+                Conversion();
+            }
+
         }
     }
 
